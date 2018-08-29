@@ -7,13 +7,12 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>用户登录</title>
 
     <%@include file="./common/head.jsp" %>
-    <base href="<%=basePath%>">
+    <base href="<%=pageContext.getAttribute("basePath")%>">
     <!-- Bootstrap core CSS -->
     <link href="css/common/bootstrap.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/signin.css" rel="stylesheet">
 
@@ -29,11 +28,11 @@
 <div class="container">
 
     <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" class="form-control" placeholder="Email address" autofocus>
-        <input type="password" class="form-control" placeholder="Password">
+        <h2 class="form-signin-heading">请登录</h2>
+        <input type="text" class="form-control" placeholder="用户民" autofocus>
+        <input type="password" class="form-control" placeholder="密码">
         <label class="checkbox">
-            <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" value="remember-me"> 记住密码
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
     </form>
@@ -41,8 +40,5 @@
 </div> <!-- /container -->
 
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>
