@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -9,38 +9,40 @@
 
     <title>Signin Template for Bootstrap</title>
 
+    <%@include file="./common/head.jsp" %>
+    <base href="<%=basePath%>">
     <!-- Bootstrap core CSS -->
-    <link href="../../css/common/bootstrap.css" rel="stylesheet">
+    <link href="css/common/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../../css/signin.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../../js/common/html5shiv.js"></script>
-      <script src="../../js/common/respond.min.js"></script>
-      <![endif]-->
-  </head>
+    <script src="js/common/html5shiv.js"></script>
+    <script src="js/common/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-  <body>
+<body>
 
-    <div class="container">
+<div class="container">
 
-      <form class="form-signin">
+    <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
         <input type="text" class="form-control" placeholder="Email address" autofocus>
         <input type="password" class="form-control" placeholder="Password">
         <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
+            <input type="checkbox" value="remember-me"> Remember me
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      </form>
+    </form>
 
-    </div> <!-- /container -->
+</div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+</body>
 </html>

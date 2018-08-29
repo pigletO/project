@@ -6,4 +6,4 @@
     pageContext.setAttribute("basePath",basePath);    
 %>
 
-<%@include file="bootstrap.jsp" %>
+<%--<%@include file="bootstrap.jsp" %>--%>
