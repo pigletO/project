@@ -10,16 +10,16 @@
     <title>Signin Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/common/bootstrap.css" rel="stylesheet">
+    <link href="../../css/common/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/signin.css" rel="stylesheet">
+    <link href="../../css/signin.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../js/common/html5shiv.js"></script>
-      <script src="../js/common/respond.min.js"></script>
-    <![endif]-->
+      <script src="../../js/common/html5shiv.js"></script>
+      <script src="../../js/common/respond.min.js"></script>
+      <![endif]-->
   </head>
 
   <body>
