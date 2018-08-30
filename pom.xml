@@ -6,7 +6,7 @@
     <packaging>war</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>ssm Maven Webapp</name>
-    <url>http://github.com/liyifeng1994/ssm</url>
+    <url>http://github.com/pigletO/project</url>
 
     <dependencies>
         <!-- 单元测试 -->
