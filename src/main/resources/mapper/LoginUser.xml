@@ -9,7 +9,7 @@
     </select>
 
     <update id="updateDate">
-        UPDATE loginUser SET loginDate = now() WHERE user_name=#{username}
+        UPDATE loginUser SET login_date = now() WHERE user_name=#{username}
     </update>
 
 
