@@ -27,7 +27,7 @@
 
 <div class="container">
 
-    <form class="form-signin">
+    <form class="form-signin" action="login/">
         <h2 class="form-signin-heading">请登录</h2>
         <input type="text" name="username" class="form-control" placeholder="用户名" autofocus>
         <input type="password" name="password" class="form-control" placeholder="密码">
