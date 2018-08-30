@@ -6,7 +6,7 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 <META charset=UTF-8">
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@include file="common/tag.jsp"%>
 <f:view>
     <h:outputLabel value="Hello, world"/>
 </f:view>

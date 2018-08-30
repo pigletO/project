@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
@@ -29,12 +29,12 @@
 
     <form class="form-signin">
         <h2 class="form-signin-heading">请登录</h2>
-        <input type="text" class="form-control" placeholder="用户民" autofocus>
-        <input type="password" class="form-control" placeholder="密码">
+        <input type="text" name="username" class="form-control" placeholder="用户名" autofocus>
+        <input type="password" name="password" class="form-control" placeholder="密码">
         <label class="checkbox">
             <input type="checkbox" value="remember-me"> 记住密码
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
     </form>
 
 </div> <!-- /container -->

@@ -14,6 +14,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/book") // url:/模块/资源/{id}/细分 /seckill/list
 public class BookController {
@@ -25,10 +27,10 @@ public class BookController {
 
 	@RequestMapping(value = "/index", method = RequestMethod.GET ,produces= "text/plain;charset=UTF-8")
 	private String list(Model model) {
-		/*List<Book> list = bookService.getList();
-		model.addAttribute("list", list);*/
+		List<Book> list = bookService.getList();
+		model.addAttribute("list", list);
 		// list.jsp + model = ModelAndView
-		return "index";// WEB-INF/jsp/"list".jsp
+		return "list";// WEB-INF/jsp/"list".jsp
 	}
 
 	@RequestMapping(value = "/{bookId}/detail", method = RequestMethod.GET)
