@@ -14,5 +14,11 @@ public interface LoginUserDao {
      */
     int selectUser(@Param("userName") String userName, @Param("password") String password);
 
-    int updateDate();
+    /**
+     * 更新用户登录时间
+     *
+     * @param userName
+     * @return
+     */
+    int updateDate(@Param("username")String userName);
 }

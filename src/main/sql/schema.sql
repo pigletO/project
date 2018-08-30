@@ -24,10 +24,11 @@ CREATE TABLE `appointment` (
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '预约图书表';
 
 -- 创建登录用户表
+DROP TABLE IF EXISTS `loginuser`;
 CREATE TABLE `loginuser` (
   `user_name` varchar(255) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `login_date` date DEFAULT NULL,
+  `login_date` datetime DEFAULT NULL,
   PRIMARY KEY (`user_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

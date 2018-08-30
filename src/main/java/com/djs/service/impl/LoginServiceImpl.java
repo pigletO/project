@@ -14,7 +14,11 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public int selectUser(String username, String password) {
 
-        return loginUserDao.selectUser(username, password);
+        //检索用户名密码获取数据
+        int result = loginUserDao.selectUser(username, password);
 
+        loginUserDao.updateDate(username);
+
+        return result;
     }
 }

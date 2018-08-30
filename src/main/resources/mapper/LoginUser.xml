@@ -8,5 +8,9 @@
         SELECT count(*) FROM loginUser WHERE user_name=#{userName} and password=#{password}
     </select>
 
+    <update id="updateDate">
+        UPDATE loginUser SET loginDate = now() WHERE user_name=#{username}
+    </update>
+
 
 </mapper>
