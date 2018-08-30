@@ -4,8 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.djs.dao.LoginUserDao">
 
-    <select id="selectUser" resultType="LoginUser">
-        SELECT * FROM loginUser WHERE user_name=#{userName} and password=#{password}
+    <select id="selectUser" resultType="java.lang.Integer">
+        SELECT count(*) FROM loginUser WHERE user_name=#{userName} and password=#{password}
     </select>
 
 
