@@ -5,12 +5,12 @@
 <mapper namespace="com.djs.dao.LoginUserDao">
 
     <select id="selectUser" resultType="java.lang.Integer">
-        SELECT count(*) FROM loginUser WHERE user_name=#{userName} and password=#{password}
+        SELECT count(*) FROM t_loginUser WHERE user_name=#{userName} and password=#{password}
     </select>
 
 
     <update id="updateDate">
-        UPDATE loginUser SET login_date = now() WHERE user_name=#{username}
+        UPDATE t_loginUser SET login_date = now() WHERE user_name=#{username}
     </update>
 
 </mapper>

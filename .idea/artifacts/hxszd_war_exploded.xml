@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="hxszd:war exploded">
-    <output-path>$PROJECT_DIR$/target/ssm</output-path>
+    <output-path>$PROJECT_DIR$/target/hxszd</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
