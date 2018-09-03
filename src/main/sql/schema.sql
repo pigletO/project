@@ -34,3 +34,33 @@ CREATE TABLE `t_loginuser` (
 
 -- 初始化登录用户数据
 INSERT INTO `t_loginuser` VALUES ('hxszd', '123', null);
+
+-- 商品基本信息表
+DROP TABLE IF EXISTS `t_goods`;
+CREATE TABLE `t_goods` (
+  `goods_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '商品编号 商品编号 主键自增',
+  `goods_location` varchar(255) DEFAULT NULL COMMENT '商品位置',
+  `goods_name` varchar(255) NOT NULL COMMENT '商品名称',
+  `goods_size` varchar(255) NOT NULL COMMENT '商品型号 S M L XL XXL XXXL XXXXL',
+  `goods_imgID` varchar(255) DEFAULT NULL COMMENT '商品图片ID 关联商品图片表',
+  `create_user` varchar(255) DEFAULT NULL COMMENT '商品信息录入者',
+  `create_date` datetime DEFAULT NULL COMMENT '商品信息录入时间',
+  `modified_uer` varchar(255) DEFAULT NULL COMMENT '商品信息修改者',
+  `modified_date` datetime DEFAULT NULL COMMENT '商品信息修改时间',
+  `Memo` longblob COMMENT '备注 备注',
+  PRIMARY KEY (`goods_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品基本信息表 存储商品基本信息';
+
+--商品图片信息表
+DROP TABLE IF EXISTS `t_imges`;
+CREATE TABLE `t_imges` (
+  `goods_imgID` int(11) DEFAULT NULL COMMENT '商品图片编号',
+  `img_location` varchar(255) DEFAULT NULL COMMENT '商品图片路径',
+  `img_name` varchar(255) DEFAULT NULL COMMENT '图片文件名 包含图片后缀名',
+  `create_user` varchar(255) DEFAULT NULL COMMENT '图片创建者',
+  `create_date` datetime DEFAULT NULL COMMENT '图片创建时间',
+  `modified_user` varchar(255) DEFAULT NULL COMMENT '图片修改者',
+  `modified_date` datetime DEFAULT NULL COMMENT '图片修改时间',
+  `Memo` longblob COMMENT '注释'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品图片表 存储商品图片';
+
